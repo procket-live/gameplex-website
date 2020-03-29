@@ -1,34 +1,7 @@
 import React from 'react';
 import GameComponent from './game.component';
 
-function GamesSection() {
-    const games = [
-        {
-            name: "PUBG: Mobile",
-            image: "https://cdn.gamingmonk.com/home-page/games/pubg-mobile.png"
-        },
-        {
-            name: "Freefire",
-            image: "https://cdn.gamingmonk.com/home-page/games/freefire.png"
-        },
-        {
-            name: "Clash Royale",
-            image: "https://cdn.gamingmonk.com/home-page/games/clash-royale.png"
-        },
-        {
-            name: "Fortnite",
-            image: "https://cdn.gamingmonk.com/home-page/games/fortnite.png"
-        },
-        {
-            name: "8 Ball Pool",
-            image: "https://cdn.gamingmonk.com/home-page/games/8-ball-pool.png"
-        },
-        {
-            name: "PUBG: Mobile",
-            image: "https://cdn.gamingmonk.com/home-page/games/pubg-mobile.png"
-        }
-    ];
-
+function GamesSection({ games = [] }) {
     return (
         <section className="jsx-3835746249 games-section my-1">
             <div className="jsx-3835746249 container py-5">
