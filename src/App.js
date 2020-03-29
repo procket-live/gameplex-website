@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Branding from './components/branding.component';
+import GamesSection from './components/games-section.component';
+import Features from './components/features.component';
+import About from './components/about.component';
+import SceneWrapper from './scene/scene-wrapper';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <SceneWrapper >
+            <Branding />
+            <GamesSection />
+            <Features />
+            <About />
+        </SceneWrapper>
+    )
 }
 
 export default App;

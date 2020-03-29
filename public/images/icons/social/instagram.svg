@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__Group_15" width="13.714" height="13.714" data-name="Group 15" viewBox="0 0 13.714 13.714">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#a3a3a3}
+        </style>
+    </defs>
+    <g id="prefix__Group_7" data-name="Group 7" transform="translate(3.35 3.351)">
+        <path id="prefix__Path_27" d="M23.791 27.3a3.507 3.507 0 113.509-3.509 3.511 3.511 0 01-3.509 3.509zm0-6.07a2.563 2.563 0 102.564 2.563 2.566 2.566 0 00-2.564-2.564z" class="prefix__cls-1" data-name="Path 27" transform="translate(-20.285 -20.285)"/>
+    </g>
+    <circle id="prefix__Ellipse_16" cx=".436" cy=".436" r=".436" class="prefix__cls-1" data-name="Ellipse 16" transform="translate(10.431 2.543)"/>
+    <g id="prefix__Group_8" data-name="Group 8">
+        <path id="prefix__Path_28" d="M26.611 30.449h-6.037a3.843 3.843 0 01-3.839-3.838v-6.037a3.843 3.843 0 013.839-3.839h6.037a3.843 3.843 0 013.839 3.839v6.037a3.843 3.843 0 01-3.839 3.838zm-6.037-12.77a2.9 2.9 0 00-2.895 2.9v6.037a2.9 2.9 0 002.895 2.894h6.037a2.9 2.9 0 002.895-2.894v-6.042a2.9 2.9 0 00-2.895-2.9z" class="prefix__cls-1" data-name="Path 28" transform="translate(-16.735 -16.735)"/>
+    </g>
+</svg>
