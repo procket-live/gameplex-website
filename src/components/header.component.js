@@ -2,10 +2,14 @@ import React from 'react';
 
 function Header({ appLink, logo }) {
     return (
-        <nav className="jsx-562014102 navbar fixed-top bg-dark py-0">
+        <nav style={{ boxShadow: 'rgba(0,0,0,.2) 3px 5px 5px' }} className="jsx-562014102 navbar fixed-top bg-dark py-0">
             <div className="jsx-562014102 container d-flex justify-content-between px-0">
                 <a href="/" className="jsx-562014102 brand navbar-brand m-0">
-                    <img src={logo} alt="gamingmonk-logo" className="jsx-562014102 logo" />
+                    {
+                        logo ?
+                            <img style={{ width: 180, height: 70 }} src={logo} alt="gamingmonk-logo" className="jsx-562014102 logo" />
+                            : null
+                    }
                 </a>
                 <div className="jsx-562014102">
                     <form method="get" className="jsx-562014102 d-none d-md-inline mr-1">
