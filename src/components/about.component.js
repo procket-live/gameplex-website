@@ -1,4 +1,5 @@
 import React from 'react';
+import Axios from 'axios';
 
 function About({ appLink, screenshotLink, abouts }) {
     return (
@@ -19,7 +20,7 @@ function About({ appLink, screenshotLink, abouts }) {
                         </ul>
                         <form method="get" className="jsx-3835746249">
                             <button onClick={() => {
-                                window.open(appLink);
+                                Axios.get(appLink);
                             }} className="jsx-3835746249 btn btn-download btn-primary">Download Now</button>
                         </form>
                     </div>

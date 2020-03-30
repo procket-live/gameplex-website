@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Axios from 'axios';
 
 function Branding({ appLink, baseUrl }) {
     const [mobile, setMobile] = useState('');
@@ -26,7 +27,7 @@ function Branding({ appLink, baseUrl }) {
                 <p className="jsx-3586416327 subtitle my-5">Participate in tournaments, watch livestreams, <br className="jsx-3586416327" />chat with other gamers, discover content and a lot more!</p>
                 <form method="get" className="jsx-3586416327 d-md-none">
                     <button onClick={() => {
-                        window.open(appLink);
+                        Axios.get(appLink);
                     }} className="jsx-3586416327 btn btn-download btn-primary">Download App</button>
                 </form>
                 {
