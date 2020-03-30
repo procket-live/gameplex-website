@@ -25,9 +25,9 @@ function Footer({ social, logo, companyName }) {
                     </div>
                     <ul className="jsx-2785336266 social-links d-flex justify-content-center p-0 m-custom">
                         {
-                            social.map((item = {}) => {
+                            social.map((item = {}, key) => {
                                 return (
-                                    <li className="jsx-2785336266 mx-3">
+                                    <li key={key} className="jsx-2785336266 mx-3">
                                         <a href={item.link} target="_blank" rel="noopener noreferrer" className="jsx-2785336266 icon-link">
                                             <img src={item.icon} className="jsx-2785336266 icon" />
                                         </a>

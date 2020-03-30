@@ -5,7 +5,7 @@ function Features({ features }) {
     return (
         <section className="jsx-3718240701">
             {
-                features.map((feature) => <FeatureSection feature={feature} />)
+                features.map((feature, key) => <FeatureSection key={key} feature={feature} />)
             }
         </section>
     )

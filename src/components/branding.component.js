@@ -34,7 +34,7 @@ function Branding({ appLink, baseUrl }) {
                         <form className="jsx-3586416327 d-none d-md-block">
                             <label className="jsx-3586416327">Enter your mobile number to receive the app download link</label>
                             <div className="jsx-3586416327 input-wrap d-flex justify-content-between rounded p-2 m-auto">
-                                <input value={mobile} onChange={onChange} type="number" placeholder="Enter Mobile number" defaultValue required className="jsx-3586416327 mobile-input flex-grow-1 border-0 px-2 mr-3" />
+                                <input value={mobile} onChange={onChange} type="number" placeholder="Enter Mobile number" required className="jsx-3586416327 mobile-input flex-grow-1 border-0 px-2 mr-3" />
                                 <button onClick={send} className="jsx-3586416327 btn btn-send btn-primary text-capitalize">Send Link</button>
                             </div>
                         </form> : null

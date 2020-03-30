@@ -14,7 +14,7 @@ function GamesSection({ games = [] }) {
                     <div className="jsx-771728816 position-relative w-100">
                         <div className="jsx-771728816 col d-flex flex-nowrap h-scroll">
                             {
-                                games.map((game) => <GameComponent game={game} />)
+                                games.map((game, key) => <GameComponent key={key} game={game} />)
                             }
                         </div>
                     </div>
