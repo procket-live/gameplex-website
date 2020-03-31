@@ -20,7 +20,8 @@ function About({ appLink, screenshotLink, abouts }) {
                         </ul>
                         <form method="get" className="jsx-3835746249">
                             <button onClick={() => {
-                                Axios.get(appLink);
+                                // Axios.get(appLink);
+                                window.open(appLink);
                             }} className="jsx-3835746249 btn btn-download btn-primary">Download Now</button>
                         </form>
                     </div>

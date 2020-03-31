@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+} from "react-router-dom";
 
-import Branding from './components/branding.component';
-import GamesSection from './components/games-section.component';
-import Features from './components/features.component';
-import About from './components/about.component';
 import SceneWrapper from './scene/scene-wrapper';
-import { FetchWebsiteData, GetAppLink } from './utils/firebase.utils';
+import { FetchWebsiteData } from './utils/firebase.utils';
+
+import HomeScene from './scene/home.scene';
+import NotFoundScene from './scene/noMatch.scene';
+import AboutScene from './scene/about.scene';
 
 function App() {
     const [websiteData, setWebstiteData] = useState({});
@@ -31,12 +36,28 @@ function App() {
     }
 
     return (
-        <SceneWrapper appLink={appLink} social={social} social={social} logo={logo} companyName={companyName} >
-            <Branding appLink={appLink} baseUrl={baseUrl} />
-            <GamesSection games={games} />
-            <Features features={features} />
-            <About appLink={appLink} screenshotLink={screenshotLink} abouts={abouts} />
-        </SceneWrapper>
+        <Router>
+            <SceneWrapper appLink={appLink} social={social} social={social} logo={logo} companyName={companyName} >
+                <Switch>
+                    <Route exact path="/">
+                        <HomeScene
+                            appLink={appLink}
+                            baseUrl={baseUrl}
+                            games={games}
+                            features={features}
+                            screenshotLink={screenshotLink}
+                            abouts={abouts}
+                        />
+                    </Route>
+                    <Route path="/about">
+                        <AboutScene />
+                    </Route>
+                    <Route path="*">
+                        <NotFoundScene />
+                    </Route>
+                </Switch>
+            </SceneWrapper>
+        </Router>
     )
 }
 

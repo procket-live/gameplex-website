@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+    Link,
+} from "react-router-dom";
 
 function Footer({ social, logo, companyName }) {
     return (
@@ -10,18 +13,13 @@ function Footer({ social, logo, companyName }) {
                             {/* {logo ? <img style={{ width: 180, height: 80, transition: all .3s linear; }} src={logo} alt="gameplex-logo" className="jsx-3801794385 logo" /> : null} */}
                         </a>
                     </div>
-                    {/* <div className="jsx-2147387680 links-wrapper row justify-content-center">
+                    <div className="jsx-2147387680 links-wrapper row justify-content-center">
                         <ul className="jsx-2147387680 footer-links p-0 py-3 m-0">
-                            <li className="jsx-2147387680 px-3 my-3 separator-right"><a href="/about" className="jsx-2147387680">About</a></li>
-                            <li className="jsx-2147387680 px-3 my-3 separator-right"><a href="/careers" className="jsx-2147387680">Careers</a></li>
-                            <li className="jsx-2147387680 px-3 my-3 separator-right"><a href="/terms" className="jsx-2147387680">Terms of Use</a></li>
-                            <li className="jsx-2147387680 px-3 my-3 separator-right"><a href="https://help.gamingmonk.com/en/" className="jsx-2147387680">FAQs / Help</a></li>
-                            <li className="jsx-2147387680 px-3 my-3"><a href="/privacy-policy" className="jsx-2147387680">Privacy
-                  Policy</a></li>
+                            <li className="jsx-2147387680 px-3 my-3 separator-right"><Link className="jsx-2147387680" to="/about">About</Link></li>
+                            <li className="jsx-2147387680 px-3 my-3 separator-right"><a href="https://www.termsandconditionsgenerator.com/live.php?token=KpAY38T1omPltvNzNMUqW4GRVbx2RFyu" className="jsx-2147387680">Terms of Use</a></li>
+                            <li className="jsx-2147387680 px-3 my-3 separator-right"><a href="https://www.termsandconditionsgenerator.com/live.php?token=KpAY38T1omPltvNzNMUqW4GRVbx2RFyu" className="jsx-2147387680">FAQs / Help</a></li>
+                            <li className="jsx-2147387680 px-3 my-3"><a href="https://www.termsandconditionsgenerator.com/live.php?token=KpAY38T1omPltvNzNMUqW4GRVbx2RFyu" className="jsx-2147387680">Privacy Policy</a></li>
                         </ul>
-                    </div> */}
-                    <div className="jsx-3801794385 d-block d-md-none text-center my-4">
-                        <a href="/" className="jsx-3801794385"><img src="./images/logo.svg" alt="gameplex-logo" className="jsx-3801794385 logo" /></a>
                     </div>
                     <ul className="jsx-2785336266 social-links d-flex justify-content-center p-0 m-custom">
                         {
