@@ -10,7 +10,11 @@ function Footer({ social, logo, companyName }) {
                 <div className="jsx-3801794385 py-custom">
                     <div className="jsx-3801794385 d-none d-md-block text-center">
                         <a href="/" className="jsx-3801794385">
-                            {/* {logo ? <img style={{ width: 180, height: 80, transition: all .3s linear; }} src={logo} alt="gameplex-logo" className="jsx-3801794385 logo" /> : null} */}
+                            {
+                                logo ?
+                                    <img style={{ height: 40, overflow: 'hidden' }} src={logo} alt="gameplex-logo" className="jsx-562014102 logo" />
+                                    : null
+                            }
                         </a>
                     </div>
                     <div className="jsx-2147387680 links-wrapper row justify-content-center">

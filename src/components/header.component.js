@@ -6,12 +6,12 @@ import {
 
 function Header({ appLink, logo }) {
     return (
-        <nav style={{ boxShadow: 'rgba(0,0,0,.2) 3px 5px 5px' }} className="jsx-562014102 navbar fixed-top bg-dark py-0">
+        <nav style={{ boxShadow: 'rgba(0,0,0,.2) 3px 5px 5px', height: 70 }} className="jsx-562014102 navbar fixed-top bg-dark py-0">
             <div className="jsx-562014102 container d-flex justify-content-between px-0">
                 <Link to="/" className="jsx-562014102 brand navbar-brand m-0">
                     {
                         logo ?
-                            <img style={{ width: 180, height: 70 }} src={logo} alt="gameplex-logo" className="jsx-562014102 logo" />
+                            <img style={{ height: 40, overflow: 'hidden' }} src={logo} alt="gameplex-logo" className="jsx-562014102 logo" />
                             : null
                     }
                 </Link>
