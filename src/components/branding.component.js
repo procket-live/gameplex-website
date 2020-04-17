@@ -25,16 +25,16 @@ function Branding({ appLink, baseUrl }) {
                 <h1 className="jsx-3586416327 heading my-5">INDIA’S LARGEST <br className="jsx-3586416327" /> GAMING COMMUNITY
                     </h1>
                 <p className="jsx-3586416327 subtitle my-5">Participate in tournaments, watch livestreams, <br className="jsx-3586416327" />chat with other gamers, discover content and a lot more!</p>
-                <form method="get" className="jsx-3586416327 d-md-none">
+                {/* <form method="get" className="jsx-3586416327 d-md-none">
                     <button onClick={() => {
                         window.open(appLink, '_system');
 
                         return false;
                     }} className="jsx-3586416327 btn btn-download btn-primary">Download App</button>
-                </form>
+                </form> */}
                 {
                     !show ?
-                        <form className="jsx-3586416327 d-none d-md-block">
+                        <form className="jsx-3586416327">
                             <label className="jsx-3586416327">Enter your mobile number to receive the app download link</label>
                             <div className="jsx-3586416327 input-wrap d-flex justify-content-between rounded p-2 m-auto">
                                 <input value={mobile} onChange={onChange} type="number" placeholder="Enter Mobile number" required className="jsx-3586416327 mobile-input flex-grow-1 border-0 px-2 mr-3" />
