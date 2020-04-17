@@ -27,9 +27,10 @@ function Branding({ appLink, baseUrl }) {
                 <p className="jsx-3586416327 subtitle my-5">Participate in tournaments, watch livestreams, <br className="jsx-3586416327" />chat with other gamers, discover content and a lot more!</p>
                 <form method="get" className="jsx-3586416327 d-md-none">
                     <button onClick={() => {
-                        // Axios.get(appLink);
-                        window.open(appLink, '_system');
-                        // window.location = appLink;
+                        setTimeout(() => {
+                            window.open(appLink, '_system');
+                        }, 3000);
+
                         return false;
                     }} className="jsx-3586416327 btn btn-download btn-primary">Download App</button>
                 </form>
