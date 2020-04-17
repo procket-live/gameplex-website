@@ -28,7 +28,7 @@ function Branding({ appLink, baseUrl }) {
                 <form method="get" className="jsx-3586416327 d-md-none">
                     <button onClick={() => {
                         // Axios.get(appLink);
-                        window.open(appLink);
+                        window.open(appLink, '_system');
                         // window.location = appLink;
                     }} className="jsx-3586416327 btn btn-download btn-primary">Download App</button>
                 </form>

@@ -18,7 +18,7 @@ function Header({ appLink, logo }) {
                 <div className="jsx-562014102">
                     <form method="get" className="jsx-562014102 d-none d-md-inline mr-1">
                         <button onClick={() => {
-                            window.open(appLink);
+                            window.open(appLink, '_system');
                             // Axios.get(appLink);
                         }} className="jsx-562014102 btn text-subtle btn-signin px-0 py-1">
                             <span className="jsx-562014102 d-none d-md-inline px-2">Download App</span>
