@@ -33,9 +33,8 @@ function App() {
 
     async function fetch() {
         const result = await FetchWebsiteData();
-        // console.log('result.app_path', result.app_path)
-        // const url = await GetDownloadURL(result.app_path);
-        // result.app_download_link = url;
+        const url = await GetDownloadURL(result.app_path);
+        result.app_download_link = url;
         setWebstiteData(result);
     }
 
