@@ -23,6 +23,7 @@ function About({ appLink, screenshotLink, abouts }) {
                                 // Axios.get(appLink);
                                 window.open(appLink, '_system');
                                 // window.location = appLink;
+                                return false;
                             }} className="jsx-3835746249 btn btn-download btn-primary">Download Now</button>
                         </form>
                     </div>
