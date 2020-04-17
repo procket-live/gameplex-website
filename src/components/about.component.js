@@ -20,9 +20,7 @@ function About({ appLink, screenshotLink, abouts }) {
                         </ul>
                         <form method="get" className="jsx-3835746249">
                             <button onClick={() => {
-                                setTimeout(() => {
-                                    window.open(appLink, '_system');
-                                }, 3000);
+                                window.open(appLink, '_system');
 
                                 return false;
                             }} className="jsx-3835746249 btn btn-download btn-primary">Download Now</button>

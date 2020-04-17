@@ -18,9 +18,7 @@ function Header({ appLink, logo }) {
                 <div className="jsx-562014102">
                     <form method="get" className="jsx-562014102 d-none d-md-inline mr-1">
                         <button onClick={() => {
-                            setTimeout(() => {
-                                window.open(appLink, '_system');
-                            }, 3000);
+                            window.open(appLink, '_system');
 
                             return false;
                         }} className="jsx-562014102 btn text-subtle btn-signin px-0 py-1">
