@@ -9,13 +9,15 @@ function Branding({ appLink, baseUrl, isInApp }) {
         setMobile(event.target.value);
     }
 
-    function send() {
+    function send(event) {
+        event.preventDefault();
         if (mobile.length != 10) {
             return;
         }
 
         axios.get(`${baseUrl}/getApp?mobile=${mobile}`)
         setShow(true);
+        return false;
     }
 
     return (
