@@ -25,3 +25,7 @@ export async function FetchWebsiteData() {
         return doc.data();
     }
 }
+
+export async function GetDownloadURL(path) {
+    return await firebase.storage().ref(`/${path}`).getDownloadURL();
+}

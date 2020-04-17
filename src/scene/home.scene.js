@@ -9,7 +9,7 @@ function HomeScene({ appLink, baseUrl, games, features, screenshotLink, abouts }
     return (
         <>
             <Branding appLink={appLink} baseUrl={baseUrl} />
-            <GamesSection games={games} />
+            {/* <GamesSection games={games} /> */}
             <Features features={features} />
             <About appLink={appLink} screenshotLink={screenshotLink} abouts={abouts} />
         </>

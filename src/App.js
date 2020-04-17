@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import SceneWrapper from './scene/scene-wrapper';
-import { FetchWebsiteData } from './utils/firebase.utils';
+import { FetchWebsiteData, GetDownloadURL } from './utils/firebase.utils';
 
 import HomeScene from './scene/home.scene';
 import NotFoundScene from './scene/noMatch.scene';
@@ -18,6 +18,7 @@ function App() {
     const features = websiteData.features || [];
     const games = websiteData.games || [];
     const social = websiteData.social || [];
+    const appPath = websiteData.app_path;
     const appLink = websiteData.app_download_link;
     const about = websiteData.about || {};
     const screenshotLink = about.screenshot_link;
@@ -32,6 +33,10 @@ function App() {
 
     async function fetch() {
         const result = await FetchWebsiteData();
+        console.log('result.app_path', result.app_path)
+        const url = await GetDownloadURL(result.app_path);
+        console.log('url', url);
+        result.app_download_link = url;
         setWebstiteData(result);
     }
 
