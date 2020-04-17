@@ -5,10 +5,10 @@ import GamesSection from '../components/games-section.component';
 import About from '../components/about.component';
 import Features from '../components/features.component';
 
-function HomeScene({ appLink, baseUrl, games, features, screenshotLink, abouts }) {
+function HomeScene({ appLink, baseUrl, games, features, screenshotLink, abouts, isInApp }) {
     return (
         <>
-            <Branding appLink={appLink} baseUrl={baseUrl} />
+            <Branding appLink={appLink} baseUrl={baseUrl} isInApp={isInApp} />
             {/* <GamesSection games={games} /> */}
             <Features features={features} />
             <About appLink={appLink} screenshotLink={screenshotLink} abouts={abouts} />

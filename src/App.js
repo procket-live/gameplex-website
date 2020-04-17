@@ -15,6 +15,8 @@ import AboutScene from './scene/about.scene';
 function App() {
     const [websiteData, setWebstiteData] = useState({});
 
+    const isInApp = InApp();
+    console.log('isInApp', isInApp)
     const features = websiteData.features || [];
     const games = websiteData.games || [];
     const social = websiteData.social || [];
@@ -31,6 +33,18 @@ function App() {
         fetch();
     }, [])
 
+    function InApp(ua = window.navigator.userAgent || window.navigator.vendor || window.opera) {
+        var rules = [
+            'WebView',
+            '(iPhone|iPod|iPad)(?!.*Safari\/)',
+            'Android.*(wv|\.0\.0\.0)',
+            'Instagram'
+        ];
+
+        var regex = new RegExp('(' + rules.join('|') + ')', 'ig');
+        return Boolean(ua.match(regex));
+    }
+
     async function fetch() {
         const result = await FetchWebsiteData();
         const url = await GetDownloadURL(result.app_path);
@@ -44,6 +58,7 @@ function App() {
                 <Switch>
                     <Route exact path="/">
                         <HomeScene
+                            isInApp={isInApp}
                             appLink={appLink}
                             baseUrl={baseUrl}
                             games={games}
