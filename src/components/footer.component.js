@@ -12,7 +12,7 @@ function Footer({ social, logo, companyName }) {
                         <a href="/" className="jsx-3801794385">
                             {
                                 logo ?
-                                    <img style={{ height: 40, overflow: 'hidden' }} src={logo} alt="gameplex-logo" className="jsx-562014102 logo" />
+                                    <img alt="gameplex logo" style={{ height: 40, overflow: 'hidden' }} src={logo} alt="gameplex-logo" className="jsx-562014102 logo" />
                                     : null
                             }
                         </a>
@@ -31,7 +31,7 @@ function Footer({ social, logo, companyName }) {
                                 return (
                                     <li key={key} className="jsx-2785336266 mx-3">
                                         <a href={item.link} target="_blank" rel="noopener noreferrer" className="jsx-2785336266 icon-link">
-                                            <img src={item.icon} className="jsx-2785336266 icon" />
+                                            <img alt="social media icon" src={item.icon} className="jsx-2785336266 icon" />
                                         </a>
                                     </li>
                                 )

@@ -7,7 +7,7 @@ function About({ appLink, screenshotLink, abouts }) {
             <div className="jsx-3835746249 container">
                 <div className="jsx-3835746249 row py-5">
                     <div className="jsx-3835746249 col-md-5 text-center">
-                        <img src={screenshotLink} className="jsx-3835746249 mobile-img" />
+                        <img alt="gameplex app download" src={screenshotLink} className="jsx-3835746249 mobile-img" />
                     </div>
                     <div style={{ color: '#0d0d0d' }} className="jsx-3835746249 col-md-7 details">
                         <p className="jsx-3835746249 subtitle my-4">Download our app for exclusive features</p>

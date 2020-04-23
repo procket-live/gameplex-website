@@ -8,7 +8,7 @@ function FeatureSection({ feature }) {
             <div className="jsx-3718240701 container">
                 <div className="jsx-3718240701 row py-5 my-1">
                     <div className={className}>
-                        <img src={feature.image} className="jsx-3718240701 w-100" />
+                        <img alt="gameplex app" src={feature.image} className="jsx-3718240701 w-100" />
                     </div>
                     <div className="jsx-3718240701 desc col-md-6">
                         <h3 className="jsx-3718240701 feature-heading my-3">{feature.name}</h3>
