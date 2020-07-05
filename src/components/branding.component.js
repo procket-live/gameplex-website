@@ -36,11 +36,12 @@ function Branding({ appLink, baseUrl, isInApp }) {
                             </div>
                         </form>
                         : <form method="get" className="jsx-3586416327 d-md-none">
-                            <button onClick={() => {
-                                window.open(appLink, '_system');
-
-                                return false;
-                            }} className="jsx-3586416327 btn btn-download btn-primary">Download App</button>
+                            <button
+                                disabled={!appLink}
+                                onClick={() => {
+                                    window.open(appLink, '_system');
+                                    return false;
+                                }} className="jsx-3586416327 btn btn-download btn-primary">Download App</button>
                         </form>
                 }
 
